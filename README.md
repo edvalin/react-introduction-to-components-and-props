@@ -1,5 +1,30 @@
 # React - Introduction to Components and Props
 
+## Setup 
+Before we begin writing code, let's setup the project and install all necesarry packages.
+Open a new Terminal window and do the following steps:
+
+1. Go to `calab` directory:
+    ```
+    cd calab
+    ```
+2. Install npm packages:
+    ```
+    npm install
+    ```
+3. Start the application:
+    ```
+    npm run dev
+    ```
+    You should see the development server being started:
+    [![Started](resources/started.png)]() 
+
+    If you open the `Local` URL in a new browser tab, you should see the follwoing:
+    [![Initial](resources/initial_screen.png)]()    
+
+
+## Steps 
+
 1. Create component called `Car`.
 -   Change direcory to `calab/src`.
 -   Create a new directory inside `src` called `componets`.
@@ -34,10 +59,12 @@
       background-color:  #343434;
   }
   ```
-- Open `Car.jsx` file and add the CSS class called `background`
-  ```
-  <div className='background'>
-  ```
+- Open `Car.jsx` file and:
+  - import `Car.css` file
+  - add the CSS class called `background`
+    ```
+    <div className='background'>
+    ```
 
 4. Send props to `Car.jsx`:
 -  Open `App.jsx` and update `Car` elements with following props:
